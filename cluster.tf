@@ -58,6 +58,10 @@ resource "google_container_cluster" "this" {
     }
   }
 
+  logging_config {
+    enable_components = var.logging_components
+  }
+
   addons_config {
     http_load_balancing {
       disabled = false

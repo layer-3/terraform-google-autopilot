@@ -12,6 +12,7 @@ This Terraform module creates a Google Kubernetes Engine (GKE) Autopilot cluster
 - `is_private`: Whether the cluster should be private.
 - `release_channel` (Optional): The release channel of the cluster (Default: `STABLE`).
 - `network_tags` (Optional): List of network tags to apply to the cluster nodes.
+- `logging_components` (Optional): List of logging components to enable (Default: `["SYSTEM_COMPONENTS", "WORKLOADS"]`).
 - `fleet_project` (Optional): The project where the fleet is located.
 - `deletion_protection` (Optional): Whether to enable deletion protection for the cluster (Default: `false`).
 - `deploy_nat` (Optional): Whether to deploy a NAT gateway for the cluster.

@@ -39,6 +39,15 @@ variable "network_tags" {
   default     = []
 }
 
+variable "logging_components" {
+  description = "GKE logging components to enable"
+  type        = list(string)
+  default     = [
+    "SYSTEM_COMPONENTS",
+    "WORKLOADS",
+  ]
+}
+
 variable "fleet_project" {
   description = "The GCP Project where the fleet is deployed"
   default     = null
